@@ -1,0 +1,18 @@
+<div class="row">
+  <h1>Get In Touch</h1>
+  <div class="panel">
+    {{#link-to 'phone'}}Phone{{/link-to}}
+    <br>
+    {{#link-to 'email'}}Email{{/link-to}}
+
+    {{#if messageSent}}
+      <p>
+      Thanks. It's on the way! Your Confirmation number is
+      {{confirmationNumber}}.
+      </p>
+    {{else}}
+    <p>How about <a href="#" {{action 'sendMessage'}}>sending a message</a></p>
+    {{/if}}
+  </div>
+  {{outlet}}
+</div>

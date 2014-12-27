@@ -1,0 +1,15 @@
+<div class="row">
+  <h1>Benji's Blog</h1>
+  {{#link-to 'new-post' class='button tiny'}}New Post{{/link-to}}
+  <a href="#" {{action 'sortByTitle'}} class="button tiny">Sort by title</a>
+
+  {{#each post in controller}}
+  <h4>
+    {{#link-to 'post' post.id}} {{post.title}} {{/link-to}}
+  </h4>
+  {{/each}}
+
+
+
+
+</div>

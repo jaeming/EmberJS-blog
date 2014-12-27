@@ -1,0 +1,9 @@
+.top-bar {
+  background: #DD90D9;
+}
+
+.button {
+  background: transparent;
+  border: solid 2px #DD90D9;
+  color: #DD90D9;
+}

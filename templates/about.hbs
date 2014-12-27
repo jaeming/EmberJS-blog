@@ -1,0 +1,17 @@
+<div class="row">
+  <h1>About Benji</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <button class="button round small" {{action 'showStuff'}}>Click here for stuff</button>
+  {{#if isPictureShowing}}
+    <button class="button small round" {{action 'hidePicture'}}>HIDE PHOTO</button>
+    <p><img src="images/startrek.png" alt="coding states"></p>
+  {{else}}
+    <button class="button small round" {{action 'showPicture'}}>click here for photo</button>
+  {{/if}}
+</div>
+
