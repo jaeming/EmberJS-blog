@@ -16,4 +16,14 @@
     <button class="button small" {{action 'edit'}}>Edit</button>
     <button class="button small" {{action 'delete'}}>Delete</button>
   {{/if}}
+
+  <h2>Comments</h2>
+
+  {{#each comments}}
+    <p>{{text}}</p>
+  {{/each}}
+
+  <p>{{#link-to 'new-comment' this.id class="button tiny"}}New Comment{{/link-to}}</p>
+
+  {{outlet}}
 </div>
